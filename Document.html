@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <a href="http://127.0.0.1:5500/index.html#books">
+                <h1>Library System</h1>
+            </a>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html#books">Books</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Register</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="book">
+        <h1>Books</h1>
+        <table>
+            <tbody><tr>
+            <th>Book ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Availability</th>
+            
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <a href="http://127.0.0.1:5500/index.html#">Book Title 1</a>
+                     Publication Date:2002Page Count:250ISBN:139438:32934:3284<table>
+                        <tbody><tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                    </tbody></table>
+                </td>
+                <td>Author 1</td>
+                <td>Genre 1</td>
+                <td>Avialable</td>
+               
+                </tr>
+                <tr> <td></td>
+                    <td>
+                        <a href="http://127.0.0.1:5500/index.html#">Book Title 2</a>
+                    </td>
+                    <td>Author 2</td>
+                    <td>Genre 2</td>
+                    <td> Not Avialable</td>
+                    
+                   
+                    </tr>
+                    <tr> <td>3</td>
+                        <td>
+                            <a href="http://127.0.0.1:5500/index.html#">Book Title 3</a>
+                        </td>
+                        <td>Author 3</td>
+                        <td>Genre 3</td>
+                        <td>Avialable</td>
+                       
+                        </tr>
+        </tbody></table>
+    </div>
+    <div class="form"></div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
